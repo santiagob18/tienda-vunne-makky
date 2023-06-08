@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+
+<html lang="es">  
+    </head>
+        <meta charset="utf-8"/>
+        <meta name="description" content="Esta pagina te dara la oportunidad de encontrar distintos productos de cosmetica,deporte y ropa"/>
+        <meta  name="robots" content="index,follow" />
+        <title>VUNNE&MAKKY</title>
+        <meta name="viewport" content="width=device-width, inictial-scale=1.0"/>
+        <link rel="stylesheet" href="./style11.css" />
+        <link rel="stylesheet" href="./mobile.css" media="screen and (min-width: 800px)" />
+        <link rel="stylesheet" href="./normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+             <header id="menu-p-navegacion">
+            <nav class="menu-p-navegacion"> 
+            <h1 class="logo">VUNNE&MAKKY</h1>
+        <div class="div_bar">
+            <input type="checkbox" class="input_checkbox">
+        <label for="checkbox" class="checkbox">
+            <img src="./imagenes/bars-solid.svg" alt="icono" class="icono_bar">
+            <img src="./imagenes/usuario.svg" alt="icono-usuario" class="__icono_usuario">
+        </label>      
+        </div>
+            <ul class="__lista_1">
+                <li><a><img src="./imagenes/usuario.svg" alt="icono-usuario" class="__icono_usuario"> iniciar sesion</a></li>
+                <li><a>registrarse</a></li>
+             </ul>              
+            <ul class="__lista_2">
+                <li><a>hombre▼</a></li>
+                <li><a>mujer▼</a></li>
+                <li><a>niños▼</a></li>
+                <li><a>deporte▼</a></li>
+                <li><a>calzado▼</a></li>
+                <li><a>ofertas▼</a></li>
+            </ul>
+            <ul class="__lista_3">
+                <li><a>nosotros</a></li>
+                <li><a>contacto</a></li>
+            </ul>
+    <div class="__barra_de_busqueda">
+       <img src="./imagenes/lupa.svg" alt="icono de buscar" class="__icono_busqueda">
+       <input type="search" placeholder="buscar">   
+    </div> 
+    <figure class="carrito_de_compras_div">
+        <img src="./imagenes/bag-shopping-solid.svg" alt="carrito de compras" class="__carrito_compras">
+        <p>2</p>
+    </figure>     
+</nav>
+</header>
+    <main> 
+        <section>                    
+        <form action="" class="formulario_registro" id="form">  
+
+            <p class="__parrafo_de_entrada">crea tu usuario y contraseña okey</p>
+        <div class="container__inputs">
+
+            <div class="form__usuario" id="form-usuario">
+                <label for="usuario" class="label-for">Usuario</label>           
+            <div class="input-div">
+                <input type="text" class="form-input" name="usuario" id="usuario" placeholder="jhon123" autocomplete="name" required>
+                <i class="icono-validacion">❎</i>
+            </div>
+            <p class="form__error">El usuario debe contener entre 4 y 16 digitos y solo puede tener letras,numeros y simbolos</p>
+            </div>
+            
+            <div class="form__usuario" id="form-nombre">
+                <label for="nombre" class="label-for">Nombre</label>           
+            <div class="input-div">
+                <input type="text" class="form-input" name="nombre" id="nombre" placeholder="carlos martinez" autocomplete="name" required>
+                <i class="icono-validacion">❎</i>
+            </div>
+            <p class="form__error">El nombre solo puede contener letras</p>
+            </div>
+              
+            <div class="form__usuario" id="form-password">
+                <label for="password" class="label-for">Contraseña</label>           
+            <div class="input-div">
+                <input type="text" class="form-input" name="password" id="password" placeholder="ar567u" autocomplete="new-password" required>
+                <i class="icono-validacion">❎</i>
+            </div>
+            <p class="form__error">La contraseña debe contener entre 4 y 16 digitos y solo puede tener letras,numeros y simbolos</p>
+            </div>
+             
+            <div class="form__usuario" id="form-password2">
+                <label for="password2" class="label-for">Repetir contraseña</label>          
+            <div class="input-div">
+                <input type="text" class="form-input" name="password2" id="password2" placeholder="ar567u" autocomplete="new-password" required>
+                <i class="icono-validacion">❎</i>
+            </div>
+            <p class="form__error">La Contraseña Debe Ser Igual a La Primera</p>
+            </div>
+               
+            <div class="form__usuario" id="form-correo">
+                <label for="correo" class="label-for">Correo</label>          
+            <div class="input-div">
+                <input type="email" class="form-input" name="correo" id="correo" placeholder="cristian6@gmail.com" autocomplete="email" required>
+                <i class="icono-validacion">❎</i>
+            </div>
+            <p class="form__error">El correo solo puede tener letras,numeros y simbolos</p>
+            </div>
+    
+            <div class="form__usuario" id="form-telefono">
+                <label for="telefono" class="label-for">Telefono</label>         
+            <div class="input-div">
+                <input type="text" class="form-input" name="telefono" id="telefono" placeholder="3124567453" autocomplete="cc-number" required>
+                <i class="icono-validacion">❎</i>
+            </div>
+            <p class="form__error">El telefono debe contener 10 digitos y solo puede tener numeros</p>
+           </div>
+        </div>
+           <div class="terminos-condiciones" id="terminos-condiciones">
+            <label class="label-terminos">
+                <input type="checkbox" class="input-terminos" id="input-terminos">
+                Acepto Los Terminos y Condiciones
+            </label>
+
+            <div class="form-error" id="form-error">
+                <p class="form_error_p" id="form_error_p" ><i>⚠️</i><b>Error:</b>por favor rellena el formulario correctamente.</p>
+            </div>
+        </div>
+            <div class="div-btn-enviar">
+                <button type="submit" class="btn-enviar" id="btn-final-enviar">Enviar</button>
+                <p class="parrafo_btn_enviar" id="parrafo-btn-enviar" >Tu Formulario Ha Sido Enviado Exitosamente.</p> 
+                <div class="btn_omitir">
+                    <button onclick="omitirform()" class="btn-omitir" id="btn-omitir">Omitir</button>
+                </div>                
+            </div>         
+        </form>
+    <section id="usuario-creado-correctamente">
+        <div class="usuario_creado_correctamente">
+            <div class="titulo">
+                <h1>vunneymakky</h1>
+            </div>           
+             <div class="h1_h2">
+               <p>has creado tu usuario ahora ven y comparte con nosotros</p>
+             </div>
+            <figure>
+                <img src="./imagenes/iconook.webp" alt="">
+            </figure>
+               <button class="btn-enviar">iniar sesion</button>
+               <p><span>no ha podido crear su usuario correctamente</span> <a href="/">volver a intentarlo</a></p>
+        </div>
+    </section>   
+    
+<section  class="iniciar-sesion" id="iniciar-sesion">
+
+    <p>bienvenido</p>  
+
+    <div class="login_registro">    
+        <form action="/" class="formulario_login">
+            <figure>
+                <img class="icono_usuario_login" src="./imagenes/iconousuario.png" alt="icono">
+            </figure>
+            <p>iniciar sesion</p>
+            <label for="usuario">
+               <input type="text" name="usuario" placeholder="usuario" required>
+            </label>
+            <label for="password">
+                <input type="password" name="password" placeholder="passsword" required>
+            </label>
+        </form>
+
+        <div class="login_con_fb_tw_em">
+            <p>inicia sesion con</p>
+            <button class="button_iniciar_sesion"><img src="./imagenes/facebook.svg" alt="icono" class="iconos_ftc"></img>aceder con facebook</button>
+            <button class="button_iniciar_sesion"><img src="./imagenes/twitter.svg" alt="icono" class="iconos_ftc"></img>acceder con twitter</button>
+            <button class="button_iniciar_sesion"><img src="./imagenes/iconoemail.svg" alt="icono" class="iconos_ftc"></img> accecer con correo</button>
+        </div>
+    </div>
+
+      <label for="submit">
+        <input type="submit" name="submit" value="iniciar" class="submit_iniciar">
+      </label>
+
+        <div class="parrafos_finales_de_inicio_de_sesion">
+            <p><span><a>olvidaste tu contraseña?</a></span> </p>
+            <p><span><a>registrarse</a></span></p>
+            <p><span><a>volver</a></span></p>
+        </div>       
+ </section>
+ <section class="editar_mi_cuenta" id="seccion-editar-mi-cuenta">
+    <h2>mi cuenta</h2>
+    <form action="/" class="formulario_editar_mi_cuenta">
+        <label for="usuario">
+            <input type="text" name="usuario" placeholder="usuario" disabled>
+        </label>
+        <label for="nombre">
+            <input type="text" name="nombre" placeholder="nombre" disabled>
+        </label>
+        <label for="email">
+            <input type="email" name="email" placeholder="email" disabled>
+        </label>
+        <label for="password">
+            <input type="password" name="password" placeholder="password" disabled>
+        </label>
+        <label for="telefono">
+            <input type="number" name="telefono" placeholder="3126578675" disabled>
+        </label>
+    </form>
+    <button class="button_editar_mi_cuenta">editar</button>
+ </section>
+ 
+ <div class="menu_mobile" id="menumobile">
+    <ul>
+        <li>
+            <a href="/">categorias</a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <a href="/">hombre</a>
+        </li>
+        <li>
+            <a href="/">mujer</a>
+        </li>
+        <li>
+            <a href="/">niños</a>
+        </li>
+        <li>
+            <a href="/">deporte</a>
+        </li>
+        <li>
+            <a href="/">calzado</a>
+        </li>
+        <li>
+            <a href="/">ofertas</a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <a href="/">mis ordenes</a>
+        </li>
+        <li>
+            <a href="/">mi cuenta</a>
+        </li>
+    </ul>
+    <ul>
+        <li class="email_menu_mobile">
+            <a href="/">placeholder@vunne&makky.com</a>
+        </li>
+        <li >
+            <a class="cerrar_sesion_menu_mobile" href="/">cerrar sesion</a>
+        </li>
+    </ul>
+ </div>
+ 
+ <section class="section_my_order" id="my-order">
+    <div class="my_order-content">
+        <h1>mi orden</h1>
+        <div class="description_total_compras">
+            <p>
+                <span>03.02.2023</span>
+                <span>6 articulos</span>
+            </p>
+            <p>$560.000</p>
+        </div>
+        <div class="articulos_comprados">
+            <div class="producto_comprado">
+            <figure>
+                <img src="./imagenes/camisanegra.jpg" alt="imagen producto">
+            </figure>
+            <p>camisa negra</p>
+            <p>$30.00</p>
+          </div>
+          <div class="producto_comprado">
+            <figure>
+                <img src="./imagenes/camisanegra.jpg" alt="imagen producto">
+            </figure>
+            <p>camisa negra</p>
+            <p>$30.00</p>
+          </div>
+          <div class="producto_comprado">
+            <figure>
+                <img src="./imagenes/camisanegra.jpg" alt="imagen producto">
+            </figure>
+            <p>camisa negra</p>
+            <p>$30.00</p>
+          </div>    
+        </div>
+    </div>
+ </section>
+ <section class="my_order_2" id="my-order-2">
+    
+        <h1>mi orden</h1>
+        <div class="description_total_compras">
+            <div class="compra_especificada">
+                <p>
+                    <span>03.02.2023</span>
+                    <span>6 articulos</span>
+                </p>
+                <p>$560.000</p>
+                <img src="./imagenes/chevron-right-solid.svg" alt="icono" class="icono_chevron">
+            </div>
+            <div class="compra_especificada">
+                    <p>
+                        <span>03.02.2023</span>
+                        <span>6 articulos</span>
+                    </p>
+                    <p>$560.000</p>
+                    <img src="./imagenes/chevron-right-solid.svg" alt="icono" class="icono_chevron">
+            </div>
+            <div class="compra_especificada">
+                    <p>
+                        <span>03.02.2023</span>
+                        <span>6 articulos</span>
+                    </p>
+                    <p>$560.000</p>
+                    <img src="./imagenes/chevron-right-solid.svg" alt="icono" class="icono_chevron">
+            </div>
+            <div class="compra_especificada">
+                    <p>
+                        <span>03.02.2023</span>
+                        <span>6 articulos</span>
+                    </p>
+                    <p>$560.000</p>
+                    <img src="./imagenes/chevron-right-solid.svg" alt="icono" class="icono_chevron">
+            </div> 
+        </div>
+ </section>
+
+    <section class="catalogo" id="catalogo">
+    
+        <div class="product-content">         
+                <img src="./imagenes/camisanegra.jpg" alt="camisa" class="img_product_catalogo">
+            <div class="description_carrito">
+              <div class="description_product">
+                <p>CAMISA NEGRA</p>             
+                <p>50.000$</p>
+              </div>
+              <figure class="icono_carrito_catalogo">
+                <img src="./imagenes/iconocarritodecompras.svg" alt="icono">
+              </figure>
+            </div>
+        </div>
+
+        <div class="product-content"> 
+                <img src="./imagenes/pantaloneta.jpg" alt="pantaloneta" class="img_product_catalogo">
+            <div class="description_carrito">  
+              <div class="description_product">
+                <p>PANTALONETA</p>       
+                <p>30.000$</p>
+              </div>
+              <figure class="icono_carrito_catalogo">
+                <img src="./imagenes/iconocarritodecompras.svg" alt="icono">
+              </figure>
+            </div>  
+        </div>
+
+        <div class="product-content">         
+                <img src="./imagenes/poleron-basico-hombre-1901.jpg" alt="poleron" class="img_product_catalogo">
+            <div class="description_carrito">
+               <div class="description_product">
+                 <p>POLERON</p> 
+                 <p>80.000$</p>
+               </div>
+               <figure class="icono_carrito_catalogo">
+                 <img src="./imagenes/iconocarritodecompras.svg" alt="icono">
+               </figure>
+            </div>
+        </div>
+
+        <div class="product-content"> 
+            <img src="./imagenes/pantaloneta.jpg" alt="pantaloneta" class="img_product_catalogo">
+        <div class="description_carrito">
+        <div class="description_product">
+            <p>PANTALONETA</p>       
+            <p>30.000$</p>
+        </div>
+        <figure class="icono_carrito_catalogo">
+            <img src="./imagenes/iconocarritodecompras.svg" alt="icono" >
+        </figure>
+        </div>
+        </div>
+
+        <div class="product-content"> 
+            <img src="./imagenes/pantaloneta.jpg" alt="pantaloneta" class="img_product_catalogo">
+        <div class="description_carrito">
+        <div class="description_product">
+            <p>PANTALONETA</p>       
+            <p>30.000$</p>
+        </div>
+        <figure class="icono_carrito_catalogo">
+            <img src="./imagenes/iconocarritodecompras.svg" alt="icono" >
+        </figure>
+        </div>
+        </div>
+
+        <div class="product-content"> 
+            <img src="./imagenes/pantaloneta.jpg" alt="pantaloneta" class="img_product_catalogo">
+        <div class="description_carrito">
+        <div class="description_product">
+            <p>PANTALONETA</p>       
+            <p>30.000$</p>
+        </div>
+        <figure class="icono_carrito_catalogo">
+            <img src="./imagenes/iconocarritodecompras.svg" alt="icono" >
+        </figure>
+        </div>
+        </div>
+
+        <div class="product-content"> 
+            <img src="./imagenes/pantaloneta.jpg" alt="pantaloneta" class="img_product_catalogo">
+        <div class="description_carrito">
+        <div class="description_product">
+            <p>PANTALONETA</p>       
+            <p>30.000$</p>
+        </div>
+        <figure class="icono_carrito_catalogo">
+            <img src="./imagenes/iconocarritodecompras.svg" alt="icono" >
+        </figure>
+        </div>
+        </div>
+
+        <div class="product-content"> 
+            <img src="./imagenes/pantaloneta.jpg" alt="pantaloneta" class="img_product_catalogo">
+        <div class="description_carrito">
+        <div class="description_product">
+            <p>PANTALONETA</p>       
+            <p>30.000$</p>
+        </div>
+        <figure class="icono_carrito_catalogo">
+            <img src="./imagenes/iconocarritodecompras.svg" alt="icono" >
+        </figure>
+        </div>
+        </div>
+    </section>
+    <aside class="aside_description_product" id="aside_description_product">
+        <div class="div_image_icon_content">
+            <figure>
+                <img src="./imagenes/camisanegra.jpg" alt="imagen del producto">
+            </figure>
+            <i><img src="./imagenes/circle-xmark-solid.svg" alt="icono de salida"></i>
+        </div>
+        <div class="div_p_description_product">
+            <p>35.00$</p>
+            <p>camisa negra</p>
+            <p>camisa negra para hombre en distintas tallas y colores,hecha especialmente para un dia casual</p>
+            <button class="button_aside_description_product">
+                <img src="./imagenes/carritodecomprasparaheader.png" alt="icono de carrito de compras">
+                add to cart
+            </button>
+        </div>
+    </aside>
+    <aside class="aside_my_order" id="aside_my_order">
+        <div class="div_aside_title"> 
+            <i><img src="./imagenes/chevron-left-solid.svg" alt="icono chevron"></i>
+            <h1>shoping cart</h1>
+            <i><img src="./imagenes/circle-xmark-solid.svg" alt="icono de salida" class="img_x_aside"></i>
+        </div>
+       <div class="aside_producto_comprado">
+        <figure>
+            <img src="./imagenes/camisanegra.jpg" alt="imagen producto">
+        </figure>
+        <p>camisa negra</p>
+        <p>$30.00</p>
+      </div>
+      <div class="aside_producto_comprado">
+        <figure>
+            <img src="./imagenes/camisanegra.jpg" alt="imagen producto">
+        </figure>
+        <p>camisa negra</p>
+        <p>$30.00</p>
+      </div>
+      <div class="aside_producto_comprado">
+        <figure>
+            <img src="./imagenes/camisanegra.jpg" alt="imagen producto">
+        </figure>
+        <p>camisa negra</p>
+        <p>$30.00</p>
+      </div>    
+      <div class="aside_description_total_compras">
+        <p>
+            <span>03.02.2023</span>
+            <span>6 articulos</span>
+        </p>
+        <p>$560.000</p>
+        <button>checkout</button>
+    </div>
+    </aside>
+    
+</main>
+
+<footer class="footer">
+    <p>Copyright © 2023 VUNNE&MAKKY</p>
+</footer>
+<script src="./vunneymakky.js"> </script>
+    </body>
+</html>
