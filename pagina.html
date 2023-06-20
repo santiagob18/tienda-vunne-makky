@@ -15,9 +15,11 @@
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap" rel="stylesheet">
     </head>
     <body>
-             <header id="menu-p-navegacion">
-            <nav class="menu-p-navegacion"> 
-            <h1 class="logo">VUNNE&MAKKY</h1>
+             <header class="header" >
+                <h1 class="logo">VUNNE&MAKKY</h1>
+            </header>
+            <nav class="menu-p-navegacion" id="menu-p-navegacion"> 
+            
         <div class="div_bar">
             <input type="checkbox" class="input_checkbox">
         <label for="checkbox" class="checkbox">
@@ -39,7 +41,7 @@
             </ul>
             <ul class="__lista_3">
                 <li><a>nosotros</a></li>
-                <li><a>contacto</a></li>
+                <li class="opciones" id="opciones">opciones</li>
             </ul>
     <div class="__barra_de_busqueda">
        <img src="./imagenes/lupa.svg" alt="icono de buscar" class="__icono_busqueda">
@@ -48,9 +50,19 @@
     <figure class="carrito_de_compras_div">
         <img src="./imagenes/bag-shopping-solid.svg" alt="carrito de compras" class="__carrito_compras">
         <p>2</p>
-    </figure>     
+    </figure>   
+    <section class="menu_desplegable_desktop" id="menu_desplegable_desktop">
+        <ul class="li_menu_desplegable_desktop">
+            <li><a href="">mis ordenes</a></li>
+            <li><a href="">mi cuenta</a></li>
+            <li><a href="">salir</a></li>
+        </ul>
+        </section>  
 </nav>
-</header>
+
+
+
+
     <main> 
         <section>                    
         <form action="" class="formulario_registro" id="form">  
@@ -147,9 +159,7 @@
     </section>   
     
 <section  class="iniciar-sesion" id="iniciar-sesion">
-
     <p>bienvenido</p>  
-
     <div class="login_registro">    
         <form action="/" class="formulario_login">
             <figure>
@@ -182,6 +192,7 @@
             <p><span><a>volver</a></span></p>
         </div>       
  </section>
+
  <section class="editar_mi_cuenta" id="seccion-editar-mi-cuenta">
     <h2>mi cuenta</h2>
     <form action="/" class="formulario_editar_mi_cuenta">
@@ -204,7 +215,7 @@
     <button class="button_editar_mi_cuenta">editar</button>
  </section>
  
- <div class="menu_mobile" id="menumobile">
+ <section class="menu_mobile" id="menumobile">
     <ul>
         <li>
             <a href="/">categorias</a>
@@ -246,7 +257,7 @@
             <a class="cerrar_sesion_menu_mobile" href="/">cerrar sesion</a>
         </li>
     </ul>
- </div>
+ </section>
  
  <section class="section_my_order" id="my-order">
     <div class="my_order-content">

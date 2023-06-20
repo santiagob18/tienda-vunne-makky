@@ -3,8 +3,11 @@ let products = [];
 let total = 0;
 
 const menupnavegacion = document.getElementById("menu-p-navegacion").style.display = "flex"
+/*menu desplegable en el navbar*/
+const opciones = document.getElementById("opciones")
+const menu_desplegable_desktop = document.getElementById("menu_desplegable_desktop")
 /*validacion del formulario*/
-const form = document.getElementById("form").style.display = "flex"
+const form = document.getElementById("form").style.display = "none"
 const usuariocreadocorrectamente = document.getElementById("usuario-creado-correctamente").style.display = "none"
 const inputs = document.querySelectorAll("#form input")
 const botonnomitir = document.getElementById("btn-omitir")
@@ -39,6 +42,11 @@ const campos = {
 	telefono: false
 }
 
+function toggledesktopmenu (){
+	console.log("hola")
+	menu_desplegable_desktop.classList.toggle("menu_desplegable_desktop")
+}
+opciones.addEventListener("click", toggledesktopmenu)
 
 
 const validarformulario = (e) => {
