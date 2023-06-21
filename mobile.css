@@ -45,19 +45,19 @@
      align-items: center;
      position: relative;
      top: 12px;
-     left: 35px;
+     right: 55px;
      cursor: pointer;
      text-transform: capitalize;  
      list-style: none;
      gap: 60px; 
  }
  .__lista_3{
-    display: block;
+     display: block;
      display:flex;
      justify-content: right;
      position: relative;
      top: 10px;
-    right: 80px;
+     right: 110px;
      margin-right: 30px;
      text-transform: capitalize; 
      list-style: none; 
@@ -72,15 +72,22 @@
     display: flex;
     justify-content: center;
     position: absolute;
-    right: 500px;
-    bottom: 100px;
+    right: 600px;
+    bottom: 90px;
+}
+.__barra_de_busqueda input{
+    height: 40px;
+    width: 50%;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
 }
 .carrito_de_compras_div{
     display: flex;
     justify-content: right;
     position: relative;
     top: 50px;
-    right: 220px;
+    right: 255px;
     margin-right: 30px;
     margin-bottom: 5px;
 }
