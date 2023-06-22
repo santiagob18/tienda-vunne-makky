@@ -34,7 +34,11 @@
     text-transform: capitalize;
     gap: 10px; 
  }
+ .__lista_1 > a:nth-child(1){
+    display: flex;
+ }
  .__lista_1 > li:nth-child(2){
+    display: flex;
      position: relative;
      top: 11px;
  }
