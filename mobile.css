@@ -86,9 +86,6 @@
     display: flex;
     justify-content: center;
     position: absolute;
-    right: 600px;
-    bottom: 90px;
-}
 .__barra_de_busqueda input{
     height: 40px;
     width: 50%;
