@@ -27,25 +27,23 @@
     display: flex;
     justify-content: left;
     position: relative;
-    left: 90px;
     margin-left: 10px;
     list-style: none;
     text-transform: capitalize;
     gap: 10px; 
+    cursor: pointer;
  }
  .__lista_1 > li:nth-child(2){
      width: 20px;
      height: 20px;
  }
  .__lista_2{
-     display: block;
      width: 100%;
      display:flex;
      justify-content: center;
      align-items: center;
-     position: relative;
-     top: 12px;
-     right: 55px;
+     position: absolute;
+     bottom: 12px;
      cursor: pointer;
      text-transform: capitalize;  
      list-style: none;
@@ -86,12 +84,25 @@
     display: flex;
     justify-content: center;
     position: absolute;
+    height: 40px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
 .__barra_de_busqueda input{
     height: 40px;
     width: 50%;
     border-top: 0;
     border-left: 0;
     border-right: 0;
+}
+.carrito_de_compras_div{
+    display: flex;
+    justify-content: right;
+    position: relative;
+    bottom: 147px;
+    margin-right: 3px;
+    margin-bottom: 5px;
 }
 .carrito_de_compras_div{
     display: flex;
@@ -111,11 +122,8 @@
 .opciones{
     cursor: pointer;
 }
-.inactive{
-    display: none;
-}
+
 .menu_desplegable_desktop{
-    display: none;
     display: flex;
     position: absolute;
     top: 134px;
@@ -127,21 +135,24 @@
     border-radius: 6px;
     padding: 20px 20px 0 20px;
 }
-.li_menu_desplegable_desktop li{
+.menu_desplegable_desktop li{
     margin-bottom: 20px;
     list-style: none;
     font-size: 20px;
     font-weight: 600;
     text-transform: capitalize;
 }
-.li_menu_desplegable_desktop li:nth-child(2){
+.menu_desplegable_desktop li:nth-child(2){
     border-bottom: 3px solid var(--very-light-pink);
 }
-.li_menu_desplegable_desktop li a{
+.menu_desplegable_desktop li a{
     color: #000000;
     text-decoration: none;
 }
-.li_menu_desplegable_desktop li:last-child a{
+.menu_desplegable_desktop li:last-child a{
     margin-bottom: 30px;
     color: var(--hospital-green);
 }
+.inactive{
+    display: none;
+ }

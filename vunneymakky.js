@@ -43,8 +43,7 @@ const campos = {
 }
 
 function toggledesktopmenu (){
-	console.log("hola")
-	menu_desplegable_desktop.classList.toggle("menu_desplegable_desktop")
+	menu_desplegable_desktop.classList.toggle("inactive")
 }
 opciones.addEventListener("click", toggledesktopmenu)
 
