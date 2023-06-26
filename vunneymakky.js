@@ -20,7 +20,7 @@ const seccioneditarmicuenta = document.getElementById("seccion-editar-mi-cuenta"
 /*seccion mi orden*/
 const myorder = document.getElementById("my-order").style.display = "none"
 const myorder2 = document.getElementById("my-order-2").style.display = "none"
-const menumobile = document.getElementById("menumobile").style.display = "none"
+const menumobile = document.getElementById("menumobile")
 /*seccion catalogo de productos*/
 const mostrarcatalogo = document.getElementById("catalogo").style.display = "none"
 /*asides*/
@@ -46,6 +46,10 @@ function toggledesktopmenu (){
 	menu_desplegable_desktop.classList.toggle("inactive")
 }
 opciones.addEventListener("click", toggledesktopmenu)
+function togglemenumobile (){
+	menumobile.classList.toggle("inactive")
+}
+opciones.addEventListener("click", togglemenumobile)
 
 
 const validarformulario = (e) => {

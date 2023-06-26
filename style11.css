@@ -45,8 +45,9 @@ body {
    display: flex;
    justify-content: left;
    position: relative;
-   right: 30px; 
+   top: 40px; 
    list-style: none; 
+   cursor: pointer;
 }
 .__lista_1 > li:nth-child(2){
     width: 20px;
@@ -70,6 +71,8 @@ body {
     display:flex;
     justify-content: right;
     position: relative;
+    top: 40px;
+    margin-right: 40px;
     text-transform: capitalize; 
     list-style: none; 
     gap: 5px;
@@ -82,6 +85,7 @@ body {
  .__lista_3 li:nth-child(2){
     width: 20px;
     height: 20px;
+    cursor: pointer;
  }
  .__lista_3 p{
     display: flex;
@@ -125,8 +129,40 @@ body {
     background-color: rgb(61, 236, 38);
     color: var(--black);
 }
-.menu_desplegable_desktop{
+/*menu mobile*/
+.menu_mobile{
+    position: absolute;
+    top: 200px;
+}
+.menu_mobile a{
+    text-decoration: none;
+    color: var(--black);
+}
+.menu_mobile ul:nth-child(-n+2){
+    margin-bottom: 15px;
+}
+.menu_mobile ul li{
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-top: 4px;
+    list-style: none;
+}
+.menu_mobile ul:nth-child(3){
+    border-top: 1px solid var(--very-light-pink);
+    margin-bottom: 40px;
+}
+
+.menu_mobile .email_menu_mobile{
+    font-size: 12px;
+    font-weight: 300;
+}
+.menu_mobile .cerrar_sesion_menu_mobile{
+    color: var(--hospital-green);
+}
+.inactive{
     display: none;
+ }
+.menu_desplegable_desktop{
     display: flex;
     position: absolute;
     top: 190px;
@@ -137,6 +173,7 @@ body {
     background-color: var(--white);
     border-radius: 6px;
     padding: 20px 20px 0 20px;
+    display: none;
 }
 .li_menu_desplegable_desktop li{
     margin-bottom: 20px;
@@ -550,35 +587,7 @@ font-weight: bold;
     cursor: pointer;
 
 }
-/*menu mobile*/
-.menu_mobile{
-    padding: 24px;
-}
-.menu_mobile a{
-    text-decoration: none;
-    color: var(--black);
-}
-.menu_mobile ul:nth-child(-n+2){
-   
-    margin-bottom: 15px;
-}
-.menu_mobile ul li{
-    text-transform: capitalize;
-    font-weight: bold;
-    margin-top: 4px;
-}
-.menu_mobile ul:nth-child(3){
-    border-top: 1px solid var(--very-light-pink);
-    margin-bottom: 40px;
-}
 
-.menu_mobile .email_menu_mobile{
-    font-size: 12px;
-    font-weight: 300;
-}
-.menu_mobile .cerrar_sesion_menu_mobile{
-    color: var(--hospital-green);
-}
 /*section mi orden*/
 .section_my_order{
     display: grid;
