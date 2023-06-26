@@ -4,6 +4,7 @@ let total = 0;
 
 const menupnavegacion = document.getElementById("menu-p-navegacion").style.display = "flex"
 /*menu desplegable en el navbar*/
+const menu_usuario = document.getElementById("menu_usuario")
 const opciones = document.getElementById("opciones")
 const menu_desplegable_desktop = document.getElementById("menu_desplegable_desktop")
 /*validacion del formulario*/
@@ -45,7 +46,7 @@ const campos = {
 function toggledesktopmenu (){
 	menu_desplegable_desktop.classList.toggle("inactive")
 }
-opciones.addEventListener("click", toggledesktopmenu)
+menu_usuario.addEventListener("click", toggledesktopmenu)
 function togglemenumobile (){
 	menumobile.classList.toggle("inactive")
 }

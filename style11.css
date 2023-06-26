@@ -48,7 +48,13 @@ body {
    top: 40px; 
    list-style: none; 
    cursor: pointer;
+   gap: 10px;
 }
+.__lista_1 li:nth-child(1){
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+ }
 .__lista_1 > li:nth-child(2){
     width: 20px;
     height: 20px;
@@ -75,13 +81,11 @@ body {
     margin-right: 40px;
     text-transform: capitalize; 
     list-style: none; 
-    gap: 5px;
+    gap: 10px;
 }
 .__lista_3 li:nth-child(1){
-    width: 20px;
-    height: 20px;
     cursor: pointer;
- }
+}
  .__lista_3 li:nth-child(2){
     width: 20px;
     height: 20px;

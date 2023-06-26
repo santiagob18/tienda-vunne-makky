@@ -34,6 +34,11 @@
     gap: 10px; 
     cursor: pointer;
  }
+ .__lista_1 li:nth-child(1){
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+ }
  .__lista_1 > li:nth-child(2){
      width: 20px;
      height: 20px;
@@ -59,13 +64,11 @@
      text-transform: capitalize; 
      list-style: none; 
      cursor: pointer;  
-     gap: 5px;
+     gap: 10px;
  }
- .__lista_3 li:nth-child(1){
-    width: 20px;
-    height: 20px;
+.__lista_3 li:nth-child(1){
     cursor: pointer;
- }
+}
  .__lista_3 li:nth-child(2){
     width: 20px;
     height: 20px;
