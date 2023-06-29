@@ -44,14 +44,26 @@ const campos = {
 }
 
 function toggledesktopmenu (){
+	menumobile.classList.add("inactive")
 	menu_desplegable_desktop.classList.toggle("inactive")
 }
 menu_usuario.addEventListener("click", toggledesktopmenu)
 function togglemenumobile (){
+	menu_desplegable_desktop.classList.add("inactive")
 	menumobile.classList.toggle("inactive")
 }
 opciones.addEventListener("click", togglemenumobile)
 
+/*function showmobilemenu() {
+	menu_desplegable_desktop.classList.add("inactive")
+	menumobile.classList.toggle("inactive")
+}
+function showmenudesplegabledesktop() {
+	menumobile.classList.add("inactive")
+	menu_desplegable_desktop.classList.toggle("inactive")
+}
+opciones.addEventListener("click", showmobilemenu)
+menu_usuario.addEventListener("click", showmenudesplegabledesktop)*/
 
 const validarformulario = (e) => {
 	switch (e.target.name) {
