@@ -149,14 +149,114 @@
     margin-bottom: 30px;
     color: var(--hospital-green);
 }
-.inactive{
-    display: none;
- }
+
  /*menu mobile*/
 .menu_mobile{
     position: absolute;
     top: 200px;
     display: none;
+}
+/*aside que mostrara mi orden a la hora de darle click al carrito de compras*/
+.aside_my_order_carrito{
+    width: 390px;
+    padding-bottom: 24px;
+    border-right: 1px solid var(--very-light-pink);
+    position: absolute;
+    right: 0;
+}
+.div_aside_title{
+    display: flex;
+    margin-bottom: 13px;
+    margin-left: 20px;
+}
+.div_aside_title h1{
+    color: var(--black);
+    font-size: 25px;
+    position: relative;
+}
+.div_aside_title i img:nth-child(1){
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 22px;
+    margin-right: 10px;
+    background-color: var(--very-light-pink);
+    cursor: pointer;
+}
+.img_x_aside{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 13px;
+    margin-left: 10px;
+    margin-right: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.aside_producto_comprado{
+    display: flex;
+    color: #000000;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.aside_producto_comprado > p:nth-child(2){
+    color: var(--very-light-pink);
+    font-weight: bold;
+    margin-right: 10px;
+}
+.aside_producto_comprado > p:nth-child(3){
+    font-weight: bold;
+    margin-left: 2px;
+    margin-right: 10px;
+}
+.aside_producto_comprado figure img{
+    width: 70px;
+    height: 70px;
+    border-radius: 3px;
+    object-fit: cover;
+}
+
+.aside_description_total_compras{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px;
+    color: var(--black);
+    font-size: 16px;
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+.aside_description_total_compras p:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 100px;
+}
+.aside_description_total_compras p:nth-child(2){
+    margin-left: 50px;
+    font-weight: bold;
+    position: relative;
+    left: 70px;
+    bottom: 50px;
+}
+.aside_description_total_compras p span:nth-child(1){
+    font-weight: bold;
+}
+.aside_description_total_compras p span:nth-child(2){
+    font-weight: bold;
+    color: var(--dark);
+}
+.aside_description_total_compras button{
+    background-color: var(--hospital-green);
+    border-radius: 8px;
+    border: none;
+    color: var(--white);
+    width: 100%;
+    cursor: pointer;
+    font-weight: bold;
+    height: 50px;
 }
 /*section mi orden*/
 .section_my_order{
@@ -228,3 +328,6 @@ text-transform: capitalize;
     font-weight: bold;
     margin-left: 20px;
 }
+.inactive{
+    display: none;
+ }

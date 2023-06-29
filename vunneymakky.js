@@ -6,6 +6,7 @@ const menupnavegacion = document.getElementById("menu-p-navegacion").style.displ
 /*menu desplegable en el navbar*/
 const menu_usuario = document.getElementById("menu_usuario")
 const opciones = document.getElementById("opciones")
+const carritodecompras = document.getElementById("carrito_de_compras")
 const menu_desplegable_desktop = document.getElementById("menu_desplegable_desktop")
 /*validacion del formulario*/
 const form = document.getElementById("form").style.display = "none"
@@ -26,7 +27,7 @@ const menumobile = document.getElementById("menumobile")
 const mostrarcatalogo = document.getElementById("catalogo").style.display = "none"
 /*asides*/
 const asidedescriptionproduct = document.getElementById("aside_description_product").style.display = "none"
-const asidemyorder = document.getElementById("aside_my_order").style.display = "none"
+const asidemyorder = document.getElementById("aside_my_order_carrito")
 
 const expresiones = {
 	usuario: /^[a-zA-Z0-9\_\-]{4,16}$/, // Letras, numeros, guion y guion_bajo
@@ -44,26 +45,25 @@ const campos = {
 }
 
 function toggledesktopmenu (){
+	aside_my_order_carrito.classList.add("inactive")
 	menumobile.classList.add("inactive")
 	menu_desplegable_desktop.classList.toggle("inactive")
 }
 menu_usuario.addEventListener("click", toggledesktopmenu)
+
 function togglemenumobile (){
+	aside_my_order_carrito.classList.add("inactive")
 	menu_desplegable_desktop.classList.add("inactive")
 	menumobile.classList.toggle("inactive")
 }
 opciones.addEventListener("click", togglemenumobile)
 
-/*function showmobilemenu() {
+function showasidemiordercarrito() {
 	menu_desplegable_desktop.classList.add("inactive")
-	menumobile.classList.toggle("inactive")
-}
-function showmenudesplegabledesktop() {
 	menumobile.classList.add("inactive")
-	menu_desplegable_desktop.classList.toggle("inactive")
+	aside_my_order_carrito.classList.toggle("inactive")
 }
-opciones.addEventListener("click", showmobilemenu)
-menu_usuario.addEventListener("click", showmenudesplegabledesktop)*/
+carritodecompras.addEventListener("click", showasidemiordercarrito)
 
 const validarformulario = (e) => {
 	switch (e.target.name) {

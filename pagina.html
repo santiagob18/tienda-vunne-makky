@@ -37,7 +37,7 @@
             </ul>
             <ul class="__lista_3">
                 <li><a><img src="./imagenes/user_icon_251962.svg" alt="icono de ususario" id="menu_usuario"></a></li>
-                <li><a><img src="./imagenes/bag-shopping-solid.svg" alt="carrito de compras"></a></li>                   
+                <li><a><img src="./imagenes/bag-shopping-solid.svg" alt="carrito de compras" id="carrito_de_compras"></a></li>                   
             </ul>
     <div class="__barra_de_busqueda">
        <img src="./imagenes/lupa.svg" alt="icono de buscar" class="__icono_busqueda">
@@ -136,6 +136,47 @@
 </nav>
 
     <main> 
+        <!--aside que muestra mi orden al darle click al carrito de compras-->
+        <aside class="aside_my_order_carrito inactive" id="aside_my_order_carrito">
+            <div class="div_aside_title"> 
+                <i><img src="./imagenes/chevron-left-solid.svg" alt="icono chevron"></i>
+                <h1>shoping cart</h1>
+                
+            </div>
+           <div class="aside_producto_comprado">
+            <figure>
+                <img src="./imagenes/camisanegra.jpg" alt="imagen producto">
+            </figure>
+            <p>camisa negra</p>
+            <p>$30.00</p>
+            <i><img src="./imagenes/circle-xmark-solid.svg" alt="icono de salida" class="img_x_aside"></i>
+          </div>
+          <div class="aside_producto_comprado">
+            <figure>
+                <img src="./imagenes/camisanegra.jpg" alt="imagen producto">
+            </figure>
+            <p>camisa negra</p>
+            <p>$30.00</p>
+            <i><img src="./imagenes/circle-xmark-solid.svg" alt="icono de salida" class="img_x_aside"></i>
+          </div>
+          <div class="aside_producto_comprado">
+            <figure>
+                <img src="./imagenes/camisanegra.jpg" alt="imagen producto">
+            </figure>
+            <p>camisa negra</p>
+            <p>$30.00</p>
+            <i><img src="./imagenes/circle-xmark-solid.svg" alt="icono de salida" class="img_x_aside"></i>
+          </div>    
+          <div class="aside_description_total_compras">
+            <p>
+                <span>03.02.2023</span>
+                <span>6 articulos</span>
+            </p>
+            <p>$560.000</p>
+            <button>checkout</button>
+        </div>
+        </aside>
+        
         <section>                    
         <form action="" class="formulario_registro" id="form">  
 
@@ -451,42 +492,7 @@
             </button>
         </div>
     </aside>
-    <aside class="aside_my_order" id="aside_my_order">
-        <div class="div_aside_title"> 
-            <i><img src="./imagenes/chevron-left-solid.svg" alt="icono chevron"></i>
-            <h1>shoping cart</h1>
-            <i><img src="./imagenes/circle-xmark-solid.svg" alt="icono de salida" class="img_x_aside"></i>
-        </div>
-       <div class="aside_producto_comprado">
-        <figure>
-            <img src="./imagenes/camisanegra.jpg" alt="imagen producto">
-        </figure>
-        <p>camisa negra</p>
-        <p>$30.00</p>
-      </div>
-      <div class="aside_producto_comprado">
-        <figure>
-            <img src="./imagenes/camisanegra.jpg" alt="imagen producto">
-        </figure>
-        <p>camisa negra</p>
-        <p>$30.00</p>
-      </div>
-      <div class="aside_producto_comprado">
-        <figure>
-            <img src="./imagenes/camisanegra.jpg" alt="imagen producto">
-        </figure>
-        <p>camisa negra</p>
-        <p>$30.00</p>
-      </div>    
-      <div class="aside_description_total_compras">
-        <p>
-            <span>03.02.2023</span>
-            <span>6 articulos</span>
-        </p>
-        <p>$560.000</p>
-        <button>checkout</button>
-    </div>
-    </aside>
+    
     
 </main>
 
