@@ -24,7 +24,7 @@ const myorder = document.getElementById("my-order").style.display = "none"
 const myorder2 = document.getElementById("my-order-2").style.display = "none"
 const menumobile = document.getElementById("menumobile")
 /*seccion catalogo de productos*/
-const mostrarcatalogo = document.getElementById("catalogo").style.display = "none"
+const catalogo = document.getElementById("catalogo")
 /*asides*/
 const asidedescriptionproduct = document.getElementById("aside_description_product").style.display = "none"
 const asidemyorder = document.getElementById("aside_my_order_carrito")
