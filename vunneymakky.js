@@ -24,7 +24,8 @@ const myorder = document.getElementById("my-order").style.display = "none"
 const myorder2 = document.getElementById("my-order-2").style.display = "none"
 const menumobile = document.getElementById("menumobile")
 /*seccion catalogo de productos*/
-const catalogo = document.getElementById("catalogo")
+const main = document.getElementById("main")
+const productcontainer = document.getElementById("catalogo");
 /*asides*/
 const asidedescriptionproduct = document.getElementById("aside_description_product").style.display = "none"
 const asidemyorder = document.getElementById("aside_my_order_carrito")
@@ -64,6 +65,78 @@ function showasidemiordercarrito() {
 	aside_my_order_carrito.classList.toggle("inactive")
 }
 carritodecompras.addEventListener("click", showasidemiordercarrito)
+
+const productlistarray = [];
+
+productlistarray.push({
+	name: 'pantaloneta',
+	price: 60000,
+	image:'./imagenes/pantaloneta.jpg',
+});
+productlistarray.push({
+	name: 'poleron',
+	price: 70000,
+	image: './imagenes/poleron-basico-hombre-1901.jpg',
+});
+
+/*<div class="product-content">         
+                <img src="./imagenes/camisanegra.jpg" alt="camisa" class="img_product_catalogo">
+            <div class="description_carrito">
+              <div class="description_product">
+                <p>CAMISA NEGRA</p>             
+                <p>50.000$</p>
+              </div>
+              <figure class="icono_carrito_catalogo">
+                <img src="./imagenes/iconocarritodecompras.svg" alt="icono">
+              </figure>
+            </div>
+        </div>*/
+for (product of productlistarray){
+
+	const productcontent = document.createElement("div");
+	productcontent.classList.add("product-content");
+
+	const productimg = document.createElement("img");
+	productimg.setAttribute("src", product.image);
+	productimg.classList.add("img_product_catalogo")
+
+	const descriptioncar = document.createElement("div");
+	descriptioncar.classList.add("description_carrito");
+
+	const descriptionproduct = document.createElement("div");
+	descriptionproduct.classList.add("description_product");
+
+	const productname = document.createElement("p");
+	productname.innerText = product.name;
+	productname.classList.add("description_carrito_p_1")
+
+	const productprice = document.createElement("p");
+	productprice.innerText = "$" + product.price;
+	productprice.classList.add("description_carrito_p_2")
+
+	descriptionproduct.appendChild(productname);
+	descriptionproduct.appendChild(productprice);
+
+	const productfigure = document.createElement("figure");
+	
+
+	const producticoncar = document.createElement("img");
+	producticoncar.setAttribute("src", "./imagenes/iconocarritodecompras.svg");
+	producticoncar.classList.add("icono_carrito_catalogo");
+
+	productfigure.appendChild(producticoncar);
+
+	descriptioncar.appendChild(descriptionproduct);
+	descriptioncar.appendChild(productfigure);
+
+	
+	productcontent.appendChild(productimg);
+	productcontent.appendChild(descriptioncar);
+	productcontent.appendChild(descriptionproduct);
+
+	productcontainer.appendChild(productcontent);
+	
+}
 
 const validarformulario = (e) => {
 	switch (e.target.name) {
@@ -133,7 +206,7 @@ input.addEventListener("keyup", validarformulario);
 input.addEventListener("blur", validarformulario);
 })
 
-form.addEventListener("submit", (e) => {
+form.addEventListener("submit", (e) =>{
 	e.preventDefault()
 	const terminos = document.getElementById("input-terminos")
 	if(campos.usuario && campos.nombre && campos.password && campos.correo  && terminos.checked){
