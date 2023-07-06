@@ -28,7 +28,7 @@ const main = document.getElementById("main")
 const productcontainer = document.getElementById("catalogo");
 /*asides*/
 const asidedescriptionproduct = document.getElementById("aside_description_product").style.display = "none"
-const asidemyorder = document.getElementById("aside_my_order_carrito")
+const aside_my_order_carrito = document.getElementById("aside_my_order_carrito")
 
 const expresiones = {
 	usuario: /^[a-zA-Z0-9\_\-]{4,16}$/, // Letras, numeros, guion y guion_bajo
@@ -78,6 +78,46 @@ productlistarray.push({
 	price: 70000,
 	image: './imagenes/poleron-basico-hombre-1901.jpg',
 });
+productlistarray.push({
+	name: 'poleron',
+	price: 70000,
+	image: './imagenes/poleron-basico-hombre-1901.jpg',
+});
+productlistarray.push({
+	name: 'poleron',
+	price: 70000,
+	image: './imagenes/poleron-basico-hombre-1901.jpg',
+});
+productlistarray.push({
+	name: 'poleron',
+	price: 70000,
+	image: './imagenes/poleron-basico-hombre-1901.jpg',
+});
+productlistarray.push({
+	name: 'poleron',
+	price: 70000,
+	image: './imagenes/poleron-basico-hombre-1901.jpg',
+});
+productlistarray.push({
+	name: 'poleron',
+	price: 70000,
+	image: './imagenes/poleron-basico-hombre-1901.jpg',
+});
+productlistarray.push({
+	name: 'poleron',
+	price: 70000,
+	image: './imagenes/poleron-basico-hombre-1901.jpg',
+});
+productlistarray.push({
+	name: 'poleron',
+	price: 70000,
+	image: './imagenes/poleron-basico-hombre-1901.jpg',
+});
+productlistarray.push({
+	name: 'poleron',
+	price: 70000,
+	image: './imagenes/poleron-basico-hombre-1901.jpg',
+});
 
 /*<div class="product-content">         
                 <img src="./imagenes/camisanegra.jpg" alt="camisa" class="img_product_catalogo">
@@ -100,12 +140,11 @@ for (product of productlistarray){
 	productimg.setAttribute("src", product.image);
 	productimg.classList.add("img_product_catalogo")
 
-	const descriptioncar = document.createElement("div");
-	descriptioncar.classList.add("description_carrito");
-
 	const descriptionproduct = document.createElement("div");
 	descriptionproduct.classList.add("description_product");
 
+	const descriptioncar = document.createElement("div");
+	
 	const productname = document.createElement("p");
 	productname.innerText = product.name;
 	productname.classList.add("description_carrito_p_1")
@@ -114,9 +153,10 @@ for (product of productlistarray){
 	productprice.innerText = "$" + product.price;
 	productprice.classList.add("description_carrito_p_2")
 
-	descriptionproduct.appendChild(productname);
-	descriptionproduct.appendChild(productprice);
+	descriptioncar.appendChild(productname);
+	descriptioncar.appendChild(productprice);
 
+	
 	const productfigure = document.createElement("figure");
 	
 
@@ -126,12 +166,11 @@ for (product of productlistarray){
 
 	productfigure.appendChild(producticoncar);
 
-	descriptioncar.appendChild(descriptionproduct);
-	descriptioncar.appendChild(productfigure);
+	descriptionproduct.appendChild(descriptioncar);
+	descriptionproduct.appendChild(productfigure);
 
-	
 	productcontent.appendChild(productimg);
-	productcontent.appendChild(descriptioncar);
+	
 	productcontent.appendChild(descriptionproduct);
 
 	productcontainer.appendChild(productcontent);

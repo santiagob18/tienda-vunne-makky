@@ -235,29 +235,29 @@ body {
     border-radius: 7px;  
     object-fit: cover; 
 }
-.description_carrito{
-    display: flex;
-}
 .description_product{
     display: flex;
-    flex-direction: column;
 }
 .description_carrito_p_1{
-    font-size: 11px;
+    font-size: 16px;
     font-weight: bold;
     margin-top: 16px;
     margin-bottom: 4px;
+    color: var(--hospital-green);
 }
 .description_carrito_p_2{
-    font-size: 11px;
+    font-size: 14px;
     font-weight: 600;
     margin-top: 16px;
     margin-bottom: 4px;
+    
 }
 
 .icono_carrito_catalogo{
     width: 25px;
     height: 25px;
+    position: relative;
+    right: 10px;
 }
 
 .product-content:hover{
@@ -279,12 +279,14 @@ body {
 }
 /*aside que mostrara mi orden a la hora de darle click al carrito de compras*/
 .aside_my_order_carrito{
+    position: absolute;
+    right: 0;
+    top: 172px;
     width: 100%;
     padding-bottom: 24px;
     border-right: 1px solid var(--very-light-pink);
-    position: absolute;
-    right: 0;
-    background-color: var(--white);
+    
+    background-color: var(--very-light-pink);
 }
 .div_aside_title{
     display: flex;
