@@ -344,6 +344,7 @@ text-transform: capitalize;
     flex-direction: column;
     gap: 26px;
     padding: 2px 16px;
+    cursor: pointer;
 }
 .img_product_catalogo{
     width: 240px;
@@ -374,6 +375,7 @@ text-transform: capitalize;
     height: 40px;
     position: relative;
     right: 10px;
+    
 }
 
 .product-content:hover{
@@ -393,6 +395,78 @@ text-transform: capitalize;
     background-color: rgb(117, 207, 14);
     color: white;
 }
+
+/*aside que muestra la descripcion especifica de un producto a la hora de darle click a la imagen del producto*/
+.aside_description_product{
+    position: absolute;
+    right: 0;
+    top: 172px;
+    width: 360px;
+    background-color: var(--white);
+    padding: 0 0 24px 0;
+ }
+ .div_image_icon_content{
+    display: flex;
+     width: 100%;
+ }
+ .div_image_icon_content > figure img:nth-child(1){
+     position: relative;
+     width: 100%;
+     height: 360px;
+     object-fit: cover;
+     border-radius: 0 0 20px 20px;
+     margin-top: 10px;
+ }
+ .div_image_icon_content > img:nth-child(2){
+     position: relative;
+     top: 12px;
+     right: 43px;
+     width: 40px;
+     height: 40px;
+     border-radius: 50%;
+     cursor: pointer;
+ }
+ .div_p_description_product{
+     display: flex;
+     flex-direction: column;
+     color: var(--black);
+     font-family:'Quicksand', sans-serif;
+     margin-left: 20px;
+ }
+ .div_p_description_product > p:nth-child(1){
+     font-weight: bold;
+     font-size: 18px;
+ }
+ .div_p_description_product > p:nth-child(2){
+     color: var(--very-light-pink);
+     font-size: 18px;
+     position: relative;
+     bottom: 14px;
+     font-weight: bold;
+ }
+ .div_p_description_product > p:nth-child(3){
+     color: var(--hospital-green);
+     font-size: 16px;
+     position: relative;
+     bottom: 8px;
+     font-weight: bold;
+ }
+ .button_aside_description_product{
+     background-color: var(--hospital-green);
+     border-radius: 8px;
+     border: none;
+     color: var(--white);
+     width: 100%;
+     cursor: pointer;
+     font-weight: bold;
+     height: 50px;
+     margin-left: 20px;
+ }
+ .button_aside_description_product > img{
+     width: 40px;
+     height: 40px;
+     position: relative;
+ }
 .inactive{
     display: none;
  }

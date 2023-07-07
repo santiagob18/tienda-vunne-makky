@@ -137,113 +137,9 @@
 
     <main id="main"> 
         <section class="catalogo" id="catalogo">
-    
-        <!--<div class="product-content">         
-                <img src="./imagenes/camisanegra.jpg" alt="camisa" class="img_product_catalogo">
-            <div class="description_carrito">
-              <div class="description_product">
-                <p>CAMISA NEGRA</p>             
-                <p>50.000$</p>
-              </div>
-              <figure class="icono_carrito_catalogo">
-                <img src="./imagenes/iconocarritodecompras.svg" alt="icono">
-              </figure>
-            </div>
-        </div>
+        </section>
 
-        <div class="product-content"> 
-                <img src="./imagenes/pantaloneta.jpg" alt="pantaloneta" class="img_product_catalogo">
-            <div class="description_carrito">  
-              <div class="description_product">
-                <p>PANTALONETA</p>       
-                <p>30.000$</p>
-              </div>
-              <figure class="icono_carrito_catalogo">
-                <img src="./imagenes/iconocarritodecompras.svg" alt="icono">
-              </figure>
-            </div>  
-        </div>
-
-        <div class="product-content">         
-                <img src="./imagenes/poleron-basico-hombre-1901.jpg" alt="poleron" class="img_product_catalogo">
-            <div class="description_carrito">
-               <div class="description_product">
-                 <p>POLERON</p> 
-                 <p>80.000$</p>
-               </div>
-               <figure class="icono_carrito_catalogo">
-                 <img src="./imagenes/iconocarritodecompras.svg" alt="icono">
-               </figure>
-            </div>
-        </div>
-
-        <div class="product-content"> 
-            <img src="./imagenes/pantaloneta.jpg" alt="pantaloneta" class="img_product_catalogo">
-        <div class="description_carrito">
-        <div class="description_product">
-            <p>PANTALONETA</p>       
-            <p>30.000$</p>
-        </div>
-        <figure class="icono_carrito_catalogo">
-            <img src="./imagenes/iconocarritodecompras.svg" alt="icono" >
-        </figure>
-        </div>
-        </div>
-
-        <div class="product-content"> 
-            <img src="./imagenes/pantaloneta.jpg" alt="pantaloneta" class="img_product_catalogo">
-        <div class="description_carrito">
-        <div class="description_product">
-            <p>PANTALONETA</p>       
-            <p>30.000$</p>
-        </div>
-        <figure class="icono_carrito_catalogo">
-            <img src="./imagenes/iconocarritodecompras.svg" alt="icono" >
-        </figure>
-        </div>
-        </div>
-
-        <div class="product-content"> 
-            <img src="./imagenes/pantaloneta.jpg" alt="pantaloneta" class="img_product_catalogo">
-        <div class="description_carrito">
-        <div class="description_product">
-            <p>PANTALONETA</p>       
-            <p>30.000$</p>
-        </div>
-        <figure class="icono_carrito_catalogo">
-            <img src="./imagenes/iconocarritodecompras.svg" alt="icono" >
-        </figure>
-        </div>
-        </div>
-
-        <div class="product-content"> 
-            <img src="./imagenes/pantaloneta.jpg" alt="pantaloneta" class="img_product_catalogo">
-        <div class="description_carrito">
-        <div class="description_product">
-            <p>PANTALONETA</p>       
-            <p>30.000$</p>
-        </div>
-        <figure class="icono_carrito_catalogo">
-            <img src="./imagenes/iconocarritodecompras.svg" alt="icono" >
-        </figure>
-        </div>
-        </div>
-
-        <div class="product-content"> 
-            <img src="./imagenes/pantaloneta.jpg" alt="pantaloneta" class="img_product_catalogo">
-        <div class="description_carrito">
-        <div class="description_product">
-            <p>PANTALONETA</p>       
-            <p>30.000$</p>
-        </div>
-        <figure class="icono_carrito_catalogo">
-            <img src="./imagenes/iconocarritodecompras.svg" alt="icono" >
-        </figure>
-        </div>
-        </div>-->
-    </section>
-
-        <!--aside que muestra mi orden al darle click al carrito de compras-->
+        <!--aside que muestra mi orden al darle click al carrito de compras de la barra de navegacion-->
         <aside class="aside_my_order_carrito inactive" id="aside_my_order_carrito">
             <div class="div_aside_title"> 
                 <i><img src="./imagenes/chevron-left-solid.svg" alt="icono chevron"></i>
@@ -283,6 +179,24 @@
             <button>checkout</button>
         </div>
         </aside>
+        <!--aside que muestra la descripcion de un producto especifico al darle click a la imagen del producto-->
+        <aside class="aside_description_product inactive" id="aside_description_product">
+            <div class="div_image_icon_content">
+                <figure>
+                    <img src="./imagenes/camisanegra.jpg" alt="imagen del producto">
+                </figure>
+                <img src="./imagenes/circle-xmark-solid.svg" alt="icono de salida" id="icon-close-aside-description-product">
+            </div>
+            <div class="div_p_description_product">
+                <p>35.00$</p>
+                <p>camisa negra</p>
+                <p>camisa negra para hombre en distintas tallas y colores,hecha especialmente para un dia casual</p>
+                <button class="button_aside_description_product">
+                    <img src="./imagenes/carritodecomprasparaheader.png" alt="icono de carrito de compras">
+                    add to cart
+                </button>
+            </div>
+        </aside>    
         
         <section>                    
         <form action="" class="formulario_registro" id="form">  
@@ -435,8 +349,6 @@
     <button class="button_editar_mi_cuenta">editar</button>
  </section>
  
- 
- 
  <section class="my_order_2" id="my-order-2">
     
         <h1>mi orden</h1>
@@ -475,26 +387,6 @@
             </div> 
         </div>
  </section>
-
-    
-    <aside class="aside_description_product" id="aside_description_product">
-        <div class="div_image_icon_content">
-            <figure>
-                <img src="./imagenes/camisanegra.jpg" alt="imagen del producto">
-            </figure>
-            <i><img src="./imagenes/circle-xmark-solid.svg" alt="icono de salida"></i>
-        </div>
-        <div class="div_p_description_product">
-            <p>35.00$</p>
-            <p>camisa negra</p>
-            <p>camisa negra para hombre en distintas tallas y colores,hecha especialmente para un dia casual</p>
-            <button class="button_aside_description_product">
-                <img src="./imagenes/carritodecomprasparaheader.png" alt="icono de carrito de compras">
-                add to cart
-            </button>
-        </div>
-    </aside>
-    
     
 </main>
 

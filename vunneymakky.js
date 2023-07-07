@@ -26,9 +26,11 @@ const menumobile = document.getElementById("menumobile")
 /*seccion catalogo de productos*/
 const main = document.getElementById("main")
 const productcontainer = document.getElementById("catalogo");
+
 /*asides*/
-const asidedescriptionproduct = document.getElementById("aside_description_product").style.display = "none"
+const asidedescriptionproduct = document.getElementById("aside_description_product")
 const aside_my_order_carrito = document.getElementById("aside_my_order_carrito")
+const iconcloseasideproduct = document.getElementById("icon-close-aside-description-product")
 
 const expresiones = {
 	usuario: /^[a-zA-Z0-9\_\-]{4,16}$/, // Letras, numeros, guion y guion_bajo
@@ -46,6 +48,7 @@ const campos = {
 }
 
 function toggledesktopmenu (){
+	asidedescriptionproduct.classList.add("inactive")
 	aside_my_order_carrito.classList.add("inactive")
 	menumobile.classList.add("inactive")
 	menu_desplegable_desktop.classList.toggle("inactive")
@@ -53,6 +56,7 @@ function toggledesktopmenu (){
 menu_usuario.addEventListener("click", toggledesktopmenu)
 
 function togglemenumobile (){
+	asidedescriptionproduct.classList.add("inactive")
 	aside_my_order_carrito.classList.add("inactive")
 	menu_desplegable_desktop.classList.add("inactive")
 	menumobile.classList.toggle("inactive")
@@ -60,11 +64,13 @@ function togglemenumobile (){
 opciones.addEventListener("click", togglemenumobile)
 
 function showasidemiordercarrito() {
+	asidedescriptionproduct.classList.add("inactive")
 	menu_desplegable_desktop.classList.add("inactive")
 	menumobile.classList.add("inactive")
 	aside_my_order_carrito.classList.toggle("inactive")
 }
 carritodecompras.addEventListener("click", showasidemiordercarrito)
+
 
 const productlistarray = [];
 
@@ -131,6 +137,17 @@ productlistarray.push({
               </figure>
             </div>
         </div>*/
+		
+function openasidedescriptionproduct() {
+	menu_desplegable_desktop.classList.add("inactive")
+	menumobile.classList.add("inactive")
+	aside_my_order_carrito.classList.add("inactive")
+	asidedescriptionproduct.classList.remove("inactive")
+}
+function closeasidedescriptionproduct() {
+	asidedescriptionproduct.classList.add("inactive")
+}
+iconcloseasideproduct.addEventListener("click", closeasidedescriptionproduct)
 for (product of productlistarray){
 
 	const productcontent = document.createElement("div");
@@ -139,6 +156,7 @@ for (product of productlistarray){
 	const productimg = document.createElement("img");
 	productimg.setAttribute("src", product.image);
 	productimg.classList.add("img_product_catalogo")
+	productimg.addEventListener("click", openasidedescriptionproduct)
 
 	const descriptionproduct = document.createElement("div");
 	descriptionproduct.classList.add("description_product");
@@ -156,10 +174,8 @@ for (product of productlistarray){
 	descriptioncar.appendChild(productname);
 	descriptioncar.appendChild(productprice);
 
-	
 	const productfigure = document.createElement("figure");
 	
-
 	const producticoncar = document.createElement("img");
 	producticoncar.setAttribute("src", "./imagenes/iconocarritodecompras.svg");
 	producticoncar.classList.add("icono_carrito_catalogo");
