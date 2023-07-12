@@ -258,7 +258,7 @@ body {
     width: 25px;
     height: 25px;
     position: relative;
-    right: 10px;
+    right: 20px;
 }
 
 .product-content:hover{
@@ -384,10 +384,11 @@ body {
 }
 /*aside que muestra la descripcion especifica de un producto a la hora de darle click a la imagen del producto*/
 .aside_description_product{
+    width: 100%;
     position: absolute;
     right: 0;
+    left: 0;
     top: 172px;
-    width: 360px;
     background-color: var(--white);
     padding: 0 0 24px 0;
  }

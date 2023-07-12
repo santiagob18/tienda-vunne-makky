@@ -398,10 +398,10 @@ text-transform: capitalize;
 
 /*aside que muestra la descripcion especifica de un producto a la hora de darle click a la imagen del producto*/
 .aside_description_product{
+    width: 360px;
     position: absolute;
     right: 0;
     top: 172px;
-    width: 360px;
     background-color: var(--white);
     padding: 0 0 24px 0;
  }
